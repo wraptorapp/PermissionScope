@@ -1145,7 +1145,7 @@ typealias resultsForConfigClosure     = ([PermissionResult]) -> Void
         let alert = UIAlertController(title: "Permission for \(permission.prettyDescription) was denied.".localized,
             message: "Please enable access to \(permission.prettyDescription) in the Settings app".localized,
             preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK".localized,
+        alert.addAction(UIAlertAction(title: "Nope, not now".localized,
             style: .cancel,
             handler: nil))
         alert.addAction(UIAlertAction(title: "Show me".localized,
@@ -1179,7 +1179,7 @@ typealias resultsForConfigClosure     = ([PermissionResult]) -> Void
         let alert = UIAlertController(title: "\(permission.prettyDescription) is currently disabled.".localized,
             message: "Please enable access to \(permission.prettyDescription) in Settings".localized,
             preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK".localized,
+        alert.addAction(UIAlertAction(title: "Nope, not now".localized,
             style: .cancel,
             handler: nil))
         alert.addAction(UIAlertAction(title: "Show me".localized,
