@@ -275,7 +275,7 @@ typealias resultsForConfigClosure     = ([PermissionResult]) -> Void
                         button.setTitle("Allowed \(prettyDescription)".localized.uppercased(), for: .normal)
                     } else if currentStatus == .unauthorized {
                         self.setButtonUnauthorizedStyle(button)
-                        button.setTitle("Allow \(prettyDescription)".localized.uppercased(), for: .normal)
+                        button.setTitle("Allow Access".localized.uppercased(), for: .normal)
                     } else if currentStatus == .disabled {
                         //                setButtonDisabledStyle(button)
                         button.setTitle("\(prettyDescription) Disabled".localized.uppercased(), for: .normal)
